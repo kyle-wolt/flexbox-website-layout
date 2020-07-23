@@ -96,9 +96,11 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
   height: 100%;
   width: 100%;
+  background: url(../img/tunnel.jpg) no-repeat center fixed;
+  background-size: 100%;
+  height: 100%;
 }
 
 body {
@@ -111,24 +113,36 @@ body {
 
 header,
 footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
+    background: #222;
+    background:rgba(0,0,0,0.8);
+    height: 80px;
+    width: 100%;
+    margin: 5px 0;
 }
 
 main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
+    background: #222;
+    background:rgba(0,0,0,0.8);
+    height: 250px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
-header,
-footer,
-main {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+header,
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+}
+
+
 
 .flex-container {
     display: flex;
@@ -137,16 +151,35 @@ main {
     flex-flow: row wrap;
 }
 
+h1 span {
+    font-family: 'Permanent Marker', cursive;
+    color: aquamarine;
+}
+
 .flex-items {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: #222;
+    background:rgba(0, 0, 0, 0.8);
+    color: #fff;
+    line-height: 1.5em;
+    font-size: .75em;
+    width: 33%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-items p {
+    padding: 0 10px;
+}
+
+main p span {
+    font-family: 'Permanent Marker', cursive;
+    color: aquamarine;
+}
+
+footer p {
+    font-size: .75em;
 }
 
 /* ==========================================================================
