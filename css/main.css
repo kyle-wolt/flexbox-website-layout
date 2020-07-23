@@ -151,6 +151,10 @@ main {
     flex-flow: row wrap;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 h1 span {
     font-family: 'Permanent Marker', cursive;
     color: aquamarine;
@@ -272,6 +276,17 @@ footer p {
   #div-3 {
     /* set your flex value to 1 100% */
   }
+}
+
+@media (max-width: 767px) {
+    main p {
+        font-size: .75em;
+    }
+
+    .flex-items p {
+        font-size: .75em;
+        line-height: 1em;
+    }
 }
 
 @media print,
